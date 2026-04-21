@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackshaw Gap | Charming Peak District Cottage</title>
+    <style>
+        /* Warm, Rustic, Country Color Palette & Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
+
+        :root {
+            --primary-bg: #F9F6F0; /* Warm cream */
+            --text-dark: #3E362E; /* Earthy dark brown */
+            --accent-green: #6B7A64; /* Sage/olive green */
+            --accent-green-hover: #5A6954;
+            --border-light: #E0DCD3;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora', serif;
+            background-color: var(--primary-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            /* Placeholder background - replace URL with your own exterior cottage photo */
+            background: linear-gradient(rgba(62, 54, 46, 0.4), rgba(62, 54, 46, 0.4)), url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #fff;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            font-family: 'Playfair Display', serif;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-green-hover);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* Section Split (Image + Text) */
+        .split-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .split-section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-box h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent-green);
+        }
+
+        .image-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        /* Features/Amenities */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .amenity-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-light);
+        }
+
+        .amenity-card h3 {
+            color: var(--accent-green);
+            font-size: 1.3rem;
+        }
+
+        /* Booking Section */
+        .booking-section {
+            background-color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .booking-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--primary-bg);
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .booking-box h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+        }
+
+        .booking-box p {
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--text-dark);
+            color: var(--primary-bg);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .split-section { gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Blackshaw Gap</h1>
+            <p>A charming 17th-century cottage retreat on a 33-acre farm in the Cheshire Peak District.</p>
+            <a href="#book" class="btn">Check Availability</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="split-section">
+            <div class="text-box">
+                <h2>Welcome to our Farm</h2>
+                <p>Welcome to Blackshaw Gap: a charming new cottage conversion, situated on our 33 acre farm in the Cheshire Peak District. Dating from the 17th century, the farm has been thoughtfully renovated over the last decade.</p>
+                <p>Named after one of our fields, Blackshaw Gap comprises a self-contained living/kitchen space and an en-suite bedroom above. Warmed by underfloor heating, the living room includes a comfortable Tetrad sofa, an antique French dining table, and a curated selection of local books and maps.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cottage Living Area">
+            </div>
+        </section>
+
+        <section class="split-section reverse">
+            <div class="text-box">
+                <h2>Rest & Retreat</h2>
+                <p>Upstairs, the en-suite bedroom features a beautiful vaulted ceiling and sweeping views of the valley. Enjoy a restful night's sleep in our super king (6') bed. </p>
+                <p>The Shaker-style kitchen area has a wonderful country feel and is fully equipped with a Nespresso Vertuo coffee maker, induction hob, Breville air fryer, and beautiful Emma Bridgewater crockery sourced from the nearby Potteries.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Super King Bedroom">
+            </div>
+        </section>
+
+        <section class="split-section">
+            <div class="text-box">
+                <h2>Farmhouse Dining</h2>
+                <p>As passionate foodies, we are delighted to offer optional dining experiences to make your stay extra special:</p>
+                <ul>
+                    <li><strong>Breakfast:</strong> A light continental breakfast delivered to your fridge, or hot options served in the cottage.</li>
+                    <li><strong>Picnic Lunches:</strong> Perfect if you are heading out to explore the Gritstone Trail or Lyme Park.</li>
+                    <li><strong>Grazing Boards:</strong> Cosy up with a bottle of wine and enjoy a hearty sharing platter.</li>
+                    <li><strong>One Pot Dishes:</strong> Delivered to your fridge during the day for you to reheat at your convenience.</li>
+                </ul>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1536521997321-70e62ebaf16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rustic Grazing Board">
+            </div>
+        </section>
+
+        <h2 style="text-align: center; color: var(--accent-green); font-size: 2.5rem; margin-top: 60px;">Cottage Highlights</h2>
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <h3>The Great Outdoors</h3>
+                <p>33 acres of non-working farm to explore. Meet our Hebridean sheep, miniature Shetland ponies, and hens. Weber BBQ available on request.</p>
+            </div>
+            <div class="amenity-card">
+                <h3>Modern Comforts</h3>
+                <p>Underfloor heating, dedicated workspace, fast WiFi, and a well-equipped shaker-style kitchen.</p>
+            </div>
+            <div class="amenity-card">
+                <h3>Prime Location</h3>
+                <p>Just 5 minutes from Bollington, nestled inside the Peak District National Park. Walk to White Nancy or hike the Goyt Valley.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="book" class="booking-section">
+        <div class="booking-box">
+            <h2>Book Your Stay</h2>
+            <p>Ready to escape to the Cheshire Peak District? Select your dates and complete your booking securely below.</p>
+            
+            <a href="YOUR_SQUARE_PAYMENT_LINK_HERE" class="btn" target="_blank" rel="noopener noreferrer">
+                Secure Booking via Square
+            </a>
+            
+            <p style="font-size: 0.9rem; margin-top: 20px; color: #666;">
+                Need help? Contact Johnny & Leah directly.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Blackshaw Gap | Macclesfield, United Kingdom</p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">Follow us on Instagram @blackshawgap</p>
+    </footer>
+
+</body>
+</html>
